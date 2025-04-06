@@ -1,3 +1,4 @@
+import PerlinNoise from "./components/PerlinNoise";
 import RandomNoise from "./components/RandomNoise";
 
 const App = () => {
@@ -7,6 +8,10 @@ const App = () => {
       <div className="canvas-container">
         <p>Random Noise (Uniform Distribution)</p>
         <RandomNoise />
+      </div>
+      <div className="canvas-container">
+        <p>Perlin Noise</p>
+        <PerlinNoise />
       </div>
     </div>
   );
