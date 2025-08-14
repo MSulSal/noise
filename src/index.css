@@ -3,22 +3,8 @@ html,
 body {
   height: 100%;
   margin: 0;
-}
-
-/* Center the entire app vertically and horizontally */
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
-  font-family: sans-serif;
-}
-/* Ensure the full viewport is used and remove default margins */
-html,
-body {
-  height: 100%;
-  margin: 0;
+  background-color: black;
+  color: #00ff00;
 }
 
 /* Center the entire app vertically and horizontally */
@@ -42,4 +28,5 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  background-color: black;
 }

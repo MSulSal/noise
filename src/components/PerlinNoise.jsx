@@ -18,10 +18,13 @@ const PerlinNoise = () => {
     for (let x = 0; x < p5.width; x++) {
       for (let y = 0; y < p5.height; y++) {
         let index = (x + y * p5.width) * 4;
-        let rand = p5.map(p5.noise(x * 0.01, y * 0.01, t), 0, 1, 0, 255);
-        let r = rand;
-        let g = rand;
-        let b = rand;
+        let rand1 = p5.map(p5.noise(x * 0.01, y * 0.03, t), 0, 1, 0, 255);
+        let rand2 = p5.map(p5.noise(x * 0.02, y * 0.02, t), 0, 1, 0, 255);
+        let rand3 = p5.map(p5.noise(x * 0.03, y * 0.01, t), 0, 1, 0, 255);
+
+        let r = rand1;
+        let g = rand2;
+        let b = rand3;
 
         p5.pixels[index] = r; // Red channel
         p5.pixels[index + 1] = g; // Green channel

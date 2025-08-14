@@ -17,10 +17,12 @@ const RandomNoise = () => {
     for (let x = 0; x < p5.width; x++) {
       for (let y = 0; y < p5.height; y++) {
         let index = (x + y * p5.width) * 4;
-        let rand = p5.floor(p5.random(1) * 255);
-        let r = rand;
-        let g = rand;
-        let b = rand;
+        let rand1 = p5.floor(p5.random(1) * 255);
+        let rand2 = p5.floor(p5.random(1) * 255);
+        let rand3 = p5.floor(p5.random(1) * 255);
+        let r = rand1;
+        let g = rand2;
+        let b = rand3;
 
         p5.pixels[index] = r; // Red channel
         p5.pixels[index + 1] = g; // Green channel
